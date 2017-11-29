@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Front app</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<section id="app"></section>
+<script type="application/javascript" src="./node_modules/morphdom/dist/morphdom-umd.min.js"></script>
+<script type="application/javascript" src="front.js"></script>
+<script type="application/javascript" src="state.js"></script>
+<script type="application/javascript" src="app.component.js"></script>
+<script>
+  // Render the app
+  Front.render(document.getElementById('app'), AppComponent, state);
+</script>
+</body>
+</html>
